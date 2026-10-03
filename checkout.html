@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Checkout</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <a href="index.html">ShopEase</a>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#products">Products</a>
+                <a href="wishlist.html">Wishlist ❤️</a>
+                <a href="cart.html">Cart 🛒</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Checkout -->
+    <main class="checkout-page">
+
+        <div class="checkout-container">
+
+            <div class="section-title">
+                <p>COMPLETE YOUR</p>
+                <h1>Order</h1>
+            </div>
+
+
+            <!-- Customer Details -->
+            <div class="checkout-box">
+
+                <h2>Delivery Details</h2>
+
+                <form id="checkoutForm">
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your phone number"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea
+                            id="address"
+                            placeholder="Enter your complete address"
+                            required
+                        ></textarea>
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input
+                                type="text"
+                                id="city"
+                                placeholder="City"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pincode">PIN Code</label>
+                            <input
+                                type="text"
+                                id="pincode"
+                                placeholder="PIN Code"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <!-- Payment -->
+                    <h2>Payment Method</h2>
+
+                    <div class="payment-options">
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="Cash on Delivery"
+                                checked
+                            >
+                            Cash on Delivery
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="UPI"
+                            >
+                            UPI
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="Card"
+                            >
+                            Credit / Debit Card
+                        </label>
+
+                    </div>
+
+
+                    <button type="submit" class="place-order-button">
+                        Place Order
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Order Summary -->
+            <div class="checkout-summary">
+
+                <h2>Order Summary</h2>
+
+                <div id="checkoutItems"></div>
+
+                <div class="checkout-total">
+                    Total: ₹<span id="checkoutTotal">0</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 ShopEase. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart - ShopEaseWeb</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <a href="index.html">ShopEaseWeb</a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="cart.html" class="active">Cart</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="login.html">Login</a>
+
+                <a href="cart.html" id="cartLink">
+                    🛒 Cart
+                    <span id="cartCount">0</span>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Cart Section -->
+    <main class="cart-page">
+
+        <div class="cart-container">
+
+            <h1>My Shopping Cart</h1>
+
+            <!-- Products will appear here -->
+            <div id="cartContainer"></div>
+
+            <!-- Cart total will appear here -->
+            <div id="cartSummary"></div>
+
+            <div class="cart-actions">
+                <a href="index.html" class="continue-shopping">
+                    ← Continue Shopping
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>ShopEaseWeb</h3>
+                <p>Your simple online shopping website.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="index.html#products">Products</a>
+                <a href="cart.html">Cart</a>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>Email: shopeaseweb@gmail.com</p>
+                <p>Phone: +91 9876543210</p>
+            </div>
+
+        </div>
+
+        <p class="footer-bottom">
+            © 2026 ShopEaseWeb. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
